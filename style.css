@@ -54,6 +54,7 @@ label {
     background-color: rgba(252, 251, 245, 0.918);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    text-align: right;
     border: none
 }
 

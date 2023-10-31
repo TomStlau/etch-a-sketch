@@ -1,6 +1,7 @@
 const sizeInput = document.querySelector('#size-input')
 const screen = document.querySelector('.screen')
-const generateBtn = document.querySelector('button')
+const generateBtn = document.querySelector('#generate-btn')
+const clearBtn = document.querySelector('#clear-btn')
 const screenSize = 540
 
 function makeBlueOnHover (square) {
@@ -48,6 +49,11 @@ generateBtn.addEventListener('click', () => {
   } else {
     alert('Please enter a number between 1 and 128')
   }
+})
+
+clearBtn.addEventListener('click', () => {
+  const squares = document.querySelectorAll('.square')
+  squares.forEach(square => square.classList.remove('hover'))
 })
 
 const squares = document.querySelectorAll('.square')
